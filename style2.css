@@ -1,0 +1,218 @@
+/*********************** Google Font **************************/
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&family=Lobster&family=Poppins:wght@400;500&display=swap');
+
+/*************** Common Style ***************/
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+/****************Header Area****************/
+header{
+    width: 90%;
+    height: 565px;
+    margin-left: 60px;
+    margin-top: 30px;
+    background-color: #161616;
+    border-radius: 30px;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    overflow: hidden;
+}
+.header-title{
+    margin-left: 140px;
+    margin-top: 70px;
+}
+.header-title h1{
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+    margin: 0;
+
+}
+.header-para{
+    color: #fff;
+    font-size: small;
+}
+.header-button{
+    color: #fff;
+    background-color: #f31d1d;
+    width: 170px;
+    height: 45px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+
+}
+.header-button i{
+    margin-left: 10px;
+    font-weight: 400;
+}
+ .header-image img{
+    width: 555px;
+    height: 515px;
+    margin-right: 150px;
+}
+ header:hover img{
+        transform: scale(0.5) rotate(360deg);
+        transition: transform 5s ;
+}
+.header-button:hover{
+    background-color: tomato;
+    transform: scaleX(1.3);
+    transition:transform 3s;
+}
+/******************* Main ****************/
+main{
+    margin-left: 60px;
+    margin-top: 60px;
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);  
+}
+/********************** Button Section *********************/
+.container{
+    background-color: #161616;
+    border-radius: 10px;
+    width: 260px;
+    height: 190px;
+}
+.match-info{
+    display: grid;
+}
+.btn-1{
+    padding: 12px;
+    margin: 15px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: .8rem;
+    font-weight: 600;
+}
+.btn-2{
+    padding: 12px;
+    margin: 15px;
+    margin-top: 0px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: .8rem;
+    font-weight: 600;
+}
+.btn-3{
+    padding: 12px;
+    margin: 15px;
+    margin-top: 0px;
+    border-radius: 10px;
+    background-color: rgb(226, 9, 9);
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+/**************** Blog Section *********************/
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    
+}
+.flags{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+}
+.flags span{
+    margin-top: 10px;
+    font-weight: 700;
+}
+.blog-image{
+    border: 1px solid rgb(235, 232, 232);
+    border-radius: 7px;
+    padding: 30px;
+    margin-left: 50px;
+}
+
+ .blog-image img{
+    width: 60px;
+    height: 40px;
+    margin-right: 0px;
+    padding: 10;
+}
+.blog-title{
+    text-align: center;
+    font-size: .9rem; 
+    font-weight: 600;
+}
+.blog-title .time{
+    font-size: .7rem;
+    font-weight: 400;
+}
+/************** footer **************/
+footer{
+    background-color: #1f1e1e;
+    color: #fff;
+}
+.footer-container{
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+}
+hr{
+    border: 1px solid rgb(49, 49, 49);
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.footer-content ul{
+   display: flex;
+   list-style: none;
+   justify-content: center;
+}
+.footer-content ul li{
+    margin: 10px;
+    font-size: .7rem;
+}
+.footer-content ul li a{
+    text-decoration: none;
+    color: rgb(194, 190, 190);
+}
+.social-link{
+    margin-left: 50%;
+}
+.social-link a{
+    border-bottom: 1px solid rgb(219, 219, 243);
+    color: blue;
+    margin: 2px;
+}
+
+/*-----------Media Queries------------*/
+
+@media (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    .container{
+        grid-template-columns: repeat(1 fr);
+    } 
+     /*.container-blog{
+        flex-direction: column;
+    }
+}
+
+/*-----------Tablet Devices------------*/
+@media (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        background-color: aqua;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+
+}
